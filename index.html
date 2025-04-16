@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Department Books - Main Index</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Fire Department Books - Main Index</h1>
+        <p>Select a topic to expand and see study materials</p>
+    </header>
+    
+    <section id="topics">
+        <div class="topic">
+            <h2 class="topic-title" onclick="toggleContent('topic1')">All Unit Circulars</h2>
+            <div class="topic-content" id="topic1">
+                <ul>
+                    <li><a href="documents/All_Unit_Circulars.pdf" target="_blank">Document: All Unit Circulars</a></li>
+                    <li><a href="flashcards/unit_circular_flashcards.html" target="_blank">Flashcards</a></li>
+                    <li><a href="practice_tests/unit_circular_test.html" target="_blank">Practice Test</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2 class="topic-title" onclick="toggleContent('topic2')">Basic Engine Operations</h2>
+            <div class="topic-content" id="topic2">
+                <ul>
+                    <li><a href="documents/Basic_Engine_Operations.pdf" target="_blank">Document: Basic Engine Operations</a></li>
+                    <li><a href="flashcards/engine_operations_flashcards.html" target="_blank">Flashcards</a></li>
+                    <li><a href="practice_tests/engine_operations_test.html" target="_blank">Practice Test</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2 class="topic-title" onclick="toggleContent('topic3')">BISP Manual</h2>
+            <div class="topic-content" id="topic3">
+                <ul>
+                    <li><a href="documents/BISP_Manual.pdf" target="_blank">Document: BISP Manual</a></li>
+                    <li><a href="flashcards/bisp_flashcards.html" target="_blank">Flashcards</a></li>
+                    <li><a href="practice_tests/bisp_test.html" target="_blank">Practice Test</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2 class="topic-title" onclick="toggleContent('topic4')">BISP Advisories</h2>
+            <div class="topic-content" id="topic4">
+                <ul>
+                    <li><a href="documents/BISP_Advisories.pdf" target="_blank">Document: BISP Advisories</a></li>
+                    <li><a href="flashcards/bisp_advisories_flashcards.html" target="_blank">Flashcards</a></li>
+                    <li><a href="practice_tests/bisp_advisories_test.html" target="_blank">Practice Test</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2 class="topic-title" onclick="toggleContent('topic5')">CFR-D Manual</h2>
+            <div class="topic-content" id="topic5">
+                <ul>
+                    <li><a href="documents/CFR_D_Manual.pdf" target="_blank">Document: CFR-D Manual</a></li>
+                    <li><a href="flashcards/cfrd_flashcards.html" target="_blank">Flashcards</a></li>
+                    <li><a href="practice_tests/cfrd_test.html" target="_blank">Practice Test</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Repeat this structure for the remaining topics -->
+
+        <div class="topic">
+            <h2 class="topic-title" onclick="toggleContent('topic6')">Communications Manual</h2>
+            <div class="topic-content" id="topic6">
+                <ul>
+                    <li><a href="documents/Communications_Manual.pdf" target="_blank">Document: Communications Manual</a></li>
+                    <li><a href="flashcards/communications_flashcards.html" target="_blank">Flashcards</a></li>
+                    <li><a href="practice_tests/communications_test.html" target="_blank">Practice Test</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Continue adding more topics as necessary -->
+
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Fire Department Books - Study Materials</p>
+    </footer>
+
+    <script>
+        function toggleContent(topicId) {
+            const content = document.getElementById(topicId);
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
